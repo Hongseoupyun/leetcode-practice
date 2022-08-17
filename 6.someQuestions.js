@@ -25,3 +25,4 @@ Note that this is just an example of how you could approach the solution.
 You are allowed to add the numbers in the array in any order that you like so that you can get the minimum total cost.
 
 */
+
