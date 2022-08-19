@@ -16,9 +16,9 @@ let Arr2 = [1, 7, 2, 8, 3, 4, 5, 0, 9];
 
 for (let i = 0; i < Arr2.length; i++)
   for (let j = i + 1; j < Arr2.length; j++)
-    if (Arr[i] > Arr[j]) {
-      let x = Arr[i];
-      Arr[i] = Arr[j];
-      Arr[j] = x;
+    if (Arr2[i] > Arr2[j]) {
+      let x = Arr2[i];
+      Arr2[i] = Arr2[j];
+      Arr2[j] = x;
     }
 console.log(Arr2);
