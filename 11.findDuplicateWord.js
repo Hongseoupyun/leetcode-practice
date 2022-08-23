@@ -40,7 +40,7 @@ const findDuplicates = function (string) {
   let allKeys = Object.keys(wordFrequencyCounter); //[ 'hello', 'my', 'name', 'is' ]
 
   allKeys.forEach((key) => {
-    return wordFrequencyCounter[key] > 1 ? duplicate.push(key) : duplicate;
+    wordFrequencyCounter[key] > 1 ? duplicate.push(key) : duplicate;
   });
 
   return duplicate; //["hello"]
