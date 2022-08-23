@@ -13,4 +13,8 @@ const isAnagram = function (string1, string2) {
   
 }
 
+
+//using hash
+
+
 console.log(isAnagram("Cinema","iceman"))
