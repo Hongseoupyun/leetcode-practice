@@ -1,3 +1,7 @@
+//make an empty array to store duplicate string
+//make an empty object to store sting counts
+//make an empty array to store splitted strings
+//
 const findDuplicates = function (string) {
   let duplicate = [];
   let wordFrequencyCounter = {};
