@@ -5,10 +5,11 @@
 //use Object.keys to get keys from the object
 //find key that is greater than 1 using forEach()
 
+//1
 const findDuplicates = function (string) {
   let duplicate = [];
   let wordFrequencyCounter = {};
-  let stringArray = string.toLowerCase().split(" "); //[ 'hello', 'my', 'name', 'is', 'hello' ];
+  let stringArray = string.toLowerCase().split(" ").sort(); //[ 'hello', 'my', 'name', 'is', 'hello' ];
 
   stringArray.forEach((word) => {
     wordFrequencyCounter[word]
@@ -25,4 +26,21 @@ const findDuplicates = function (string) {
   return duplicate; //["hello"]
 };
 
-findDuplicates("Hello my name is hello");
+console.log(findDuplicates("Hello my name is hello"));
+
+//2
+function findDuplicates2(string) {
+  let duplicate = [];
+  let stringArray = string.toLowerCase().split(" ").sort(); //[ 'hello', 'my', 'name', 'is', 'hello' ];
+
+
+  for (let i = 0; i < stringArray.length - 1; i++) {
+
+    if (stringArray[i] === stringArray[i + 1]) {
+      duplicate.push(stringArray[i])
+    }
+  }
+  return duplicate
+}
+
+console.log(findDuplicates2("wow is wow zz"))
