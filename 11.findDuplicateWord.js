@@ -1,7 +1,10 @@
 //make an empty array to store duplicate string
 //make an empty object to store sting counts
-//make an empty array to store splitted strings
-//
+//make an empty array to store splitted strings using .toLowerCase() and .split(" ")
+//use forEach()to loop through the splitted strings array and store the world and counts
+//use Object.keys to get keys from the object
+//find key that is greater than 1 using forEach()
+
 const findDuplicates = function (string) {
   let duplicate = [];
   let wordFrequencyCounter = {};

@@ -7,7 +7,7 @@ function findDuplicate(array) {
   let results = []
 
   for (let i = 0; i < sortedArray.length - 1; i++) {
-    if(sortedArray[i]===sortedArray[i+1]){
+    if (sortedArray[i] === sortedArray[i + 1]) {
       results.push(sortedArray[i])
     }
   }
@@ -15,4 +15,4 @@ function findDuplicate(array) {
 }
 
 
-console.log(findDuplicate([1,2,3,4,5,5,6,7,7,8]))
+console.log(findDuplicate([1, 2, 3, 4, 5, 5, 6, 7, 7, 8]))

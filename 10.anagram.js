@@ -15,6 +15,12 @@ const isAnagram1 = function (string1, string2) {
 
 
 //using hashmap
+
+//If the length of the string is not same, it is not anagram
+//make two empty object to store letter and counts
+//loop through string and the store the letter and counts
+//if the letter and count is not same , it is not anagram
+//otherwise, reture true
 const isAnagram2 = function (string1, string2) {
   if (string1.length !== string2.length) return false
 
