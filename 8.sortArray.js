@@ -22,3 +22,12 @@ for (let i = 0; i < Arr2.length; i++)
       Arr2[j] = x;
     }
 console.log(Arr2);
+
+//using Sort Ascending
+
+let numArray = [140000, 104, 99];
+numArray.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(numArray);
