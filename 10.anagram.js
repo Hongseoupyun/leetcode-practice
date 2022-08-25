@@ -1,6 +1,6 @@
-//anagram is a word formed by rearranging the letters of another eg)iceman=>cinema
+//1.anagram is a word formed by rearranging the letters of another eg)iceman=>cinema
 
-//If you order two anaram words in alphabetical order it will be uniform
+//2.If you order two anaram words in alphabetical order it will be uniform
 
 
 const isAnagram1 = function (string1, string2) {
@@ -16,11 +16,11 @@ const isAnagram1 = function (string1, string2) {
 
 //using hashmap
 
-//If the length of the string is not same, it is not anagram
-//make two empty object to store letter and counts
-//loop through string and the store the letter and counts
-//if the letter and count is not same , it is not anagram
-//otherwise, reture true
+//1.If the length of the string is not same, it is not anagram
+//2.make two empty object to store letter and counts
+//3.loop through string and the store the letter and counts
+//4.if the letter and count is not same , it is not anagram
+//5.otherwise, reture true
 const isAnagram2 = function (string1, string2) {
   if (string1.length !== string2.length) return false
 
