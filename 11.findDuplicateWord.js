@@ -31,7 +31,7 @@ console.log(findDuplicates("Hello my name is hello"));
 //2
 function findDuplicates2(string) {
   let duplicate = [];
-  let stringArray = string.toLowerCase().split(" ").sort(); //[ 'hello', 'my', 'name', 'is', 'hello' ];
+  let stringArray = string.toLowerCase().split(" ").sort(); //[ 'hello', 'hello' ,'my', 'name', 'is' ];
 
 
   for (let i = 0; i < stringArray.length - 1; i++) {
