@@ -24,4 +24,4 @@
     //set node.next and node.next.next
     node.next = next;//9
     //4-1-9
-};
+}; 
