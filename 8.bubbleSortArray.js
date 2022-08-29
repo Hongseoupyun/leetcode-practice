@@ -1,4 +1,5 @@
 //sorting an array with descending orer/bubble Sort
+//O(N^2) quadratic
 
 let Arr = [1, 7, 2, 8, 3, 4, 5, 0, 9];
 

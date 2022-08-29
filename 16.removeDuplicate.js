@@ -12,4 +12,23 @@ function removeDuplicate(array) {
   return result
 }
 
+function removeDuplicate2(array){
+  return [...new Set(array)]
+}
+
+function removeDuplicate3(array) {
+  const map = {}
+
+  for (const char of array) {
+    if (map[char]) {
+      map[char]++
+    } else {
+       map[char] = 1
+    }
+  }
+
+  return Object.keys(map)
+}
 console.log(removeDuplicate([1,1,2,2,3,4,5,6]))
+console.log(removeDuplicate2([1,2,2,2,2,2,4,5,6,6,6,6,1,6,1,25]))
+console.log(removeDuplicate3([1,2,2,2,2,2,4,5,6,6,6,6,1,6,1,25]))
