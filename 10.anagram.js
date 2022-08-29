@@ -39,8 +39,9 @@ const isAnagram2 = function (string1, string2) {
   for (let key in string1Count) {
     if (string1Count[key] !== string2Count[key]) return false
   }
+  console.log(string1Count)
   return true
 }
 
-console.log(isAnagram1("Cinema", "iceman"))
-console.log(isAnagram2("Cinema", "iceman"))
+console.log(isAnagram1("Cineman", "icemann"))
+console.log(isAnagram2("Cineman", "icemann"))
