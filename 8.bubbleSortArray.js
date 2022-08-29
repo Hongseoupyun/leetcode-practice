@@ -1,4 +1,4 @@
-//sorting an array with descending orer
+//sorting an array with descending orer/bubble Sort
 
 let Arr = [1, 7, 2, 8, 3, 4, 5, 0, 9];
 
@@ -11,7 +11,7 @@ for (let i = 0; i < Arr.length; i++)
     }
 console.log(Arr);
 
-//sorting an array with aescending orer
+//sorting an array with aescending orer/bubble Sort
 let Arr2 = [1, 7, 2, 8, 3, 4, 5, 0, 9];
 
 for (let i = 0; i < Arr2.length; i++)
