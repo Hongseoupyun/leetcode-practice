@@ -30,4 +30,4 @@ function findMin3(nums) {
   return Math.min(...nums)
 }
 
-console.log(findMin([3,4,5,1,2]))
+console.log(findMin([5,1,2,3,4]))
