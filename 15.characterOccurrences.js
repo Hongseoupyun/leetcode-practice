@@ -2,18 +2,18 @@
 //make an empty object to store char and count of it
 //loop through it and store the char=>if obj[char] = true, obj[char]=+1 otherwise, obj[char]=1
 function countOccurrences (string){
-  let stringArray = string.split("")
+  let stringToLoop = string.toLowerCase().replace(/[^\w]/g, '')
   let charCount = {}
 
-  for(let i =0; i<stringArray.length;i++){
-    if(!charCount[stringArray[i]]){
-      charCount[stringArray[i]] = 1
+  for(let i =0; i<stringToLoop.length;i++){
+    if(!charCount[stringToLoop[i]]){
+      charCount[stringToLoop[i]] = 1
     } else {
-      charCount[stringArray[i]] += 1
+      charCount[stringToLoop[i]] += 1
     }
   }
   return charCount
 
 }
 
-console.log(countOccurrences("Hello World"))
+console.log(countOccurrences("Helloh Wworld"))
