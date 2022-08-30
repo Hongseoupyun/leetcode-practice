@@ -4,6 +4,10 @@
 // Output: 1
 // Explanation: The original array was [1,2,3,4,5] rotated 3 times.
 
+// [1,2,3,4,5]
+// [5,1,2,3,4]
+// [4,5,1,2,3]
+// [3,4,5,1,2]
 function findMin(nums) {
   let left = 0
   let right = nums.length - 1
