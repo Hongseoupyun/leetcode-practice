@@ -9,7 +9,7 @@ function permute(nums) {
 
   const dfs = (i, nums) => {
     //base case
-    //if i === nums.length when we are at leaft level of the tree, push the copy of nums to result
+    //if i === nums.length when we are at leaf level of the tree, push the copy of nums to result
     if (i === nums.length) {
       result.push(nums.slice());
       return;
