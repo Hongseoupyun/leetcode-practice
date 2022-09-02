@@ -29,4 +29,4 @@ function permuteString(string) {
   return result;
 }
 
-console.log(permuteString("aav"));
+console.log(permuteString("aava"));
