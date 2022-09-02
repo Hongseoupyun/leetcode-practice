@@ -16,7 +16,7 @@ function permuteString(string) {
 
   for (let i = 0; i < string.length; i++) {
     let currentChar = string[i];
-    //Check if the string has a repeating char "aaa"
+    //Check if the string has a repeating char eg) "aaa"
     if (string.indexOf(currentChar) != i) {
       continue;
     }
