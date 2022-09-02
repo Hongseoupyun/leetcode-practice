@@ -1,7 +1,12 @@
 //tree structure using depth-first search
+//1.there is 2 pointer i and j
+//2.set i = j.
+//3.when i = 0, j increases using for loop and swap the array[i] and array[j] ,then dfs(i+1,nums)
+//4.repeat this untill the i === nums.length
+//5.initiate by calling dfs(0,nums) and return result
 
 //recursive
-function permute(nums) {
+function permuteArray(nums) {
   //global result
   const result = [];
 
@@ -31,10 +36,11 @@ function permute(nums) {
   return result;
 }
 
-console.log(permute([1, 2, 3]));
+console.log(permuteArray([1, 2, 3]));
 
 
 //iterative
-function permute2(){
+// function permute2(){
+  
 
-}
+// }
