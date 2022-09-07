@@ -11,33 +11,19 @@
 //3. if true return [map[target-nums[i]],i]
 //4. otherwise, map[nums[i],i]
 twoSum = function (nums, target) {
-  let map = {};
+  let count = {};
 
   for (let i = 0; i < nums.length; i++) {
     let value = nums[i];
     let complementPair = target - value;
 
-    if (map[complementPair]) {
-      return [map[complementPair], i];
+    if (count[complementPair]) {
+      return [count[complementPair], i];
     } else {
-      map[value] = i;
+      count[value] = i;
     }
-    console.log(map);
+    console.log(count);
   }
 };
 
 console.log(twoSum([1, 2, 3, 4, 5, 6, 7], 11));
-const twoSum = (array, target) => {
-  const hastable = {};
-  for ( let i = 0; i < array.length; i++) {
-     let complement = target - array[i];
-    
-     if ( hashtable.hasOwnProperty(complement)){
-       return [hashtable[complement], i]
-     }
-
-     hashtable[array[i]] = i;   
-  };
-  
-  return null;
-};
