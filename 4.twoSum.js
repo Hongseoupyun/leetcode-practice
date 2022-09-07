@@ -27,3 +27,17 @@ twoSum = function (nums, target) {
 };
 
 console.log(twoSum([1, 2, 3, 4, 5, 6, 7], 11));
+const twoSum = (array, target) => {
+  const hastable = {};
+  for ( let i = 0; i < array.length; i++) {
+     let complement = target - array[i];
+    
+     if ( hashtable.hasOwnProperty(complement)){
+       return [hashtable[complement], i]
+     }
+
+     hashtable[array[i]] = i;   
+  };
+  
+  return null;
+};
