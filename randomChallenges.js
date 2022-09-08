@@ -15,14 +15,14 @@
 
 function findIndex(array) {
   let result = -1
-  
+
   if (array[0] < array[1]) {
     return result
-   }
+  }
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i] < array[i+1]){
-      result = i +1
+    if (array[i] < array[i + 1]) {
+      result = i + 1
       return result
     }
   }
@@ -44,3 +44,24 @@ console.log(findIndex([6, 3, 1, 4, 10, 11]))
   * (the zeros aligned vertically on lines 22-23, horizontally on line 23, and again vertically on lines 23-24)
 */
 
+function findContiguous(array) {
+
+  let count = 0
+
+  for (let i = 0; i < array.length; i++) {
+
+    if (array[i][i] === "0" && array[i][i + 1] === "0") {
+      count++
+    }
+    for (let j = 0; j < array[i].length; j++) {
+      if (array[i][j] === "0" && array[i + 1][j] === "0") {
+        count++
+      }
+    }
+  }
+  return console.log(count)
+
+}
+
+
+findContiguous(["1111", "1001", "1010", "1111"])
