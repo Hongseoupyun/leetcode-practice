@@ -24,10 +24,10 @@ twoSum = function (nums, target) {
 
   for (let i = 0; i < nums.length; i++) {
     let value = nums[i];
-    let complementPair = target - value;
+    let pair = target - value;
 
-    if (count[complementPair]) {
-      return [count[complementPair], i];
+    if (count[pair]) {
+      return [count[pair], i];
     } else {
       count[value] = i;
     }
