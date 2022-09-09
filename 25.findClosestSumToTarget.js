@@ -3,6 +3,30 @@
 //[10, 22, 28, 29, 30, 40], 54 => return [22,30]
 //[1, 3, 4, 7, 10], 15 => return [4,10]
 
+
+/* 
+1.write edge cases
+
+1)when the arr has 0 or 1 element
+2)when the target value is 0
+3)when the arr has numbers that add up to the target
+
+2.have a initial setting of variables 
+=>  i = 0 ,
+    j = arr.length - 1 ,
+    result = [],
+    absoluteDiff = Math.abs(arr[i]+arr[j]-target)
+
+3. use while(i < j) loop to loop
+4. get the sum of arr[i] and arr [j] and compare the sum and target
+5. if (sum < target) i ++ and check if ( absoluteDiff(arr[i] and arr[j]) < initalabsoluteDiff)
+6. if yes , reassign absoluteDiff as the new absoluteDiff and result as [arr[i],arr[j]]
+7. if (sum > target) j-- and check if ( absoluteDiff(arr[i] and arr[j]) < initalabsoluteDiff)
+8. if yes, reassign absoluteDiff as the new absoluteDiff and result as [arr[i],arr[j]]
+9. return result when the loop is done
+
+*/
+
 function fn(arr, target) {
   let result = [];
   //if the arr has no element or single element
