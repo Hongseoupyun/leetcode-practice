@@ -1,5 +1,4 @@
 class LinkedList {
-
   constructor() {
     this.head = null;
     this.tail = null;
@@ -12,14 +11,14 @@ class LinkedList {
     newNode.next = currentHead;
     this.head = newNode;
 
-    if(!this.tail){
+    if (!this.tail) {
       this.tail = newNode;
     }
   }
 
   append(newValue) {
-    const newNode = new LinkedListNode(newValue)
-    if(!this.head){
+    const newNode = new LinkedListNode(newValue);
+    if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
     } else {
@@ -28,19 +27,11 @@ class LinkedList {
     }
   }
 
-  print() {
+  print() {}
 
-  }
-
-  getByIndex(index) {
-
-  }
-  insertAtIndex(index, value) {
-
-  }
-  removeAtIndex(index){
-
-  }
+  getByIndex(index) {}
+  insertAtIndex(index, value) {}
+  removeAtIndex(index) {}
 }
 
 function LinkedListNode(value) {
@@ -48,3 +39,4 @@ function LinkedListNode(value) {
   this.next = null;
 }
 
+module.exports = LinkedList;
