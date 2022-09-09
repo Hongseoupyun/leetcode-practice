@@ -9,28 +9,28 @@ function fn(arr, target) {
 
   let i = 0,
     j = arr.length - 1,
-    t = Math.abs(arr[i] + arr[j] - target);
+    absoluteDiff = Math.abs(arr[i] + arr[j] - target);
     
   while (i < j) {
     let sum = arr[i] + arr[j];
     
-    if (sum === t) {
+    if (sum === absoluteDiff) {
       result = [arr[i], arr[j]];
       break;
     }
     
     if (sum < target) {
       i++;
-      if (Math.abs(arr[i] + arr[j] - target) < t) {
-        t = Math.abs(arr[i] + arr[j] - target);
+      if (Math.abs(arr[i] + arr[j] - target) < absoluteDiff) {
+        absoluteDiff = Math.abs(arr[i] + arr[j] - target);
         result = [arr[i], arr[j]];
       }
     }
     
     if (sum > target) {
       j--;
-      if (Math.abs(arr[i] + arr[j] - target) < t) {
-        t = Math.abs(arr[i] + arr[j] - target);
+      if (Math.abs(arr[i] + arr[j] - target) < absoluteDiff) {
+        absoluteDiff = Math.abs(arr[i] + arr[j] - target);
         result = [arr[i], arr[j]];
       }
     }
