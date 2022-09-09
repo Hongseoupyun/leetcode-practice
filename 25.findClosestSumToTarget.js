@@ -1,5 +1,8 @@
 //Math.abs = > returns absolute value of a number
 
+//[10, 22, 28, 29, 30, 40], 54 => return [22,30]
+//[1, 3, 4, 7, 10], 15 => return [4,10]
+
 function fn(arr, target) {
   let result = [];
   if (arr.length < 2) return result;
