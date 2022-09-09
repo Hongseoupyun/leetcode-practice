@@ -13,22 +13,56 @@
   * Function should return -1 in this case because values keep getting smaller
 */
 
-function findIndex(array) {
-  let result = -1
-
-  if (array[0] < array[1]) {
-    return result
-  }
-
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] < array[i + 1]) {
-      result = i + 1
-      return result
-    }
-  }
+/* Returns true if the array is descending to the elements (homogeneous). */
+function isIncreasing(array) {
+  for(let i = 0 ; i < array.length ; ++i)
+    if(array[i] < array[i + 1])
+      return false;
+  return true;
 }
-console.log(findIndex([6, 3, 1, 4, 10, 11]))
 
+/* Returns true if the array is incremental (homogeneous) to the elements. */
+function isDecreasing(array) {
+  for(let i = 0 ; i < array.length ; ++i)
+    if(array[i] > array[i + 1])
+      return false;
+  return true;
+}
+
+/* Returns true if the array content is ever-increasing or ever-decreasing. */
+function isHomogeneous(array) {
+  return isIncreasing(array) || isDecreasing(array);
+}
+
+/* return the descending index in the array starting with increasing. */
+function getAscendingIndex(array) {
+  for(let i = 0 ; i < array.length ; ++i)
+    if(array[i] > array[i + 1])
+      return i;
+  return -1;
+}
+
+/* return increasing index in array starting with decreasing. */
+function getDescendingIndex(array) {
+  for(let i = 0 ; i < array.length ; ++i)
+    if(array[i] < array[i + 1])
+      return i;
+  return -1;
+}
+
+/* demo */
+function application(array) {
+
+ if(!isHomogeneous(array) && getAscendingIndex(array) != -1) {
+    console.log(getDescendingIndex(array));
+  }
+  if(!isHomogeneous(array) && getDescendingIndex(array) != -1) {
+    console.log(getDescendingIndex(array));
+  }
+
+}
+
+application([1,2,3,4,3,2,1]);
 /*
   * Challenge 2:
   * Given a 2D array, write a function that returns the number of contiguous 0's
