@@ -11,3 +11,16 @@ describe("#Prepend", () => {
     expect(List.head.next).toBe(oldHead);
   });
 });
+
+describe("#Append",()=>{
+  test("It adds new node to the end of the List",()=>{
+    const List = new LinkedList();
+    List.append(1)
+    const oldTail = List.tail;
+    List.append(2);
+
+    expect(List.tail.value).toBe(2);
+    expect(List.head).toBe(oldTail);
+
+  })
+})
