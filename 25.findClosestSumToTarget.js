@@ -5,6 +5,7 @@
 
 function fn(arr, target) {
   let result = [];
+  //if the arr has no element or single element
   if (arr.length < 2) return result;
 
   let i = 0,
@@ -14,8 +15,14 @@ function fn(arr, target) {
   while (i < j) {
     let sum = arr[i] + arr[j];
     
+    //If the target is 0
     if (sum === absoluteDiff) {
       result = [arr[i], arr[j]];
+      break;
+    }
+    //if the target has numbers add up to target
+    if(sum === target){
+      result = [arr[i],arr[j]];
       break;
     }
     
@@ -44,3 +51,5 @@ console.log(fn([10, 22, 28, 29, 30, 40], 54));
 console.log(fn([1, 3, 4, 7, 10], 15));
 console.log(fn([5], 7));
 console.log(fn([], 7));
+console.log(fn([1,2,3,4,-1], 0));
+console.log(fn([1,2,3,4], 7));
