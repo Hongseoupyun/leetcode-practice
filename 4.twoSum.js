@@ -18,7 +18,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 //1.loop through the nums array
 //2.check if the target value - nums[i] is in the hasmap
 //3. if true return [map[target-nums[i]],i]
-//4. otherwise, map[nums[i],i]
+//4. otherwise, map[nums[i]]=i
 twoSum = function (nums, target) {
   let count = {};
 
