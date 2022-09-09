@@ -1,3 +1,6 @@
+//what is quicksort?
+//It is divide and conquer sort
+
 //pick pivot value, split array into two and put smaller number than the pivot into left array and put bigger number than the pivot into the right arary.
 //Repeat the process all the array and put all sub-arrays together to get return.
 

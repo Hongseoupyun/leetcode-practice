@@ -1,3 +1,5 @@
+//Math.abs = > returns absolute value of a number
+
 function fn(arr, x) {
   let res = [];
   if (arr.length < 2) return res;
