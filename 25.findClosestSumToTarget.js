@@ -1,40 +1,40 @@
 //Math.abs = > returns absolute value of a number
 
-function fn(arr, x) {
-  let res = [];
-  if (arr.length < 2) return res;
+function fn(arr, target) {
+  let result = [];
+  if (arr.length < 2) return result;
 
   let i = 0,
     j = arr.length - 1,
-    t = Math.abs(arr[i] + arr[j] - x);
+    t = Math.abs(arr[i] + arr[j] - target);
     
   while (i < j) {
-    let s = arr[i] + arr[j];
+    let sum = arr[i] + arr[j];
     
-    if (s === t) {
-      res = [arr[i], arr[j]];
+    if (sum === t) {
+      result = [arr[i], arr[j]];
       break;
     }
     
-    if (s < x) {
+    if (sum < target) {
       i++;
-      if (Math.abs(arr[i] + arr[j] - x) < t) {
-        t = Math.abs(arr[i] + arr[j] - x);
-        res = [arr[i], arr[j]];
+      if (Math.abs(arr[i] + arr[j] - target) < t) {
+        t = Math.abs(arr[i] + arr[j] - target);
+        result = [arr[i], arr[j]];
       }
     }
     
-    if (s > x) {
+    if (sum > target) {
       j--;
-      if (Math.abs(arr[i] + arr[j] - x) < t) {
-        t = Math.abs(arr[i] + arr[j] - x);
-        res = [arr[i], arr[j]];
+      if (Math.abs(arr[i] + arr[j] - target) < t) {
+        t = Math.abs(arr[i] + arr[j] - target);
+        result = [arr[i], arr[j]];
       }
     }
     
   }
   
-  return res;
+  return result;
 }
 
 console.log(fn([10, 22, 28, 29, 30, 40], 54));
