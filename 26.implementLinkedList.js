@@ -64,7 +64,19 @@ class LinkedList {
     prev.next = new linkedListNode(value, prev.next);
     this.length++;
   }
-  removeAtIndex(index) {}
+  removeAtIndex(index) {
+    if (index === 0) {
+      this.head = this.head.next;
+      this.length--;
+      return
+    }
+
+    if (index > this.length || index < 0) return null;
+
+    const prev = this.getByIndex(index - 1);
+    prev.next = prev.next.next;
+    this.length--;
+  }
 }
 
 function linkedListNode(value, next) {

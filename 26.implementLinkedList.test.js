@@ -101,3 +101,60 @@ describe("#insertAtindex", () => {
     });
   });
 });
+
+describe("#removeAtIndex", () => {
+  describe("with index 0", () => {
+    test("remove the head", () => {
+      const List = new LinkedList();
+      List.append(0);
+      List.append(1);
+      List.append(2);
+
+      List.removeAtIndex(0);
+
+      expect(List.length).toBe(2);
+      expect(List.head.value).toBe(1);
+      expect(List.head.next.value).toBe(2);
+    });
+  });
+
+  describe("with index less than 0", () => {
+    test("it does not remove anyting", () => {
+      const List = new LinkedList();
+      List.append(0);
+      List.append(1);
+      List.append(2);
+
+      List.removeAtIndex(-1);
+
+      expect(List.length).toBe(3);
+    });
+  });
+  describe("with index greater than list length", () => {
+    test("it does not remove anyting", () => {
+      const List = new LinkedList();
+      List.append(0);
+      List.append(1);
+      List.append(2);
+
+      List.removeAtIndex(4);
+
+      expect(List.length).toBe(3);
+    });
+  });
+
+  describe("with index in the middle", () => {
+    test("it removes at the given index", () => {
+      const List = new LinkedList();
+      List.append(0);
+      List.append(1);
+      List.append(2);
+
+      List.removeAtIndex(1);
+
+      expect(List.length).toBe(2);
+      expect(List.getByIndex(1).value).toBe(2);
+      expect(List.getByIndex(1).next?.value).toBeNull;
+    });
+  });
+});
