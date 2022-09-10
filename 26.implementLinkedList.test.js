@@ -45,3 +45,7 @@ describe("#getByindex", () => {
     expect(List.getByIndex(0).value).toBe(0);
   });
 });
+
+describe("#insertAtindex",()=>{
+  
+})
