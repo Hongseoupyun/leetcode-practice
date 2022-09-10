@@ -2,7 +2,7 @@ class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
-    this.length = 0
+    this.length = 0;
   }
 
   prepend(newValue) {
@@ -11,11 +11,11 @@ class LinkedList {
 
     newNode.next = currentHead;
     this.head = newNode;
-    
+
     if (!this.tail) {
       this.tail = newNode;
     }
-    this.length++
+    this.length++;
   }
 
   append(newValue) {
@@ -26,8 +26,8 @@ class LinkedList {
     } else {
       this.tail.next = newNode;
       this.tail = newNode;
-      this.length++
     }
+    this.length++;
   }
 
   print() {
@@ -44,7 +44,7 @@ class LinkedList {
 
   getByIndex(index) {
     if (!this.head && !this.tail) return null;
-    if (index < this.length || index < 0) return null;
+    if (index > this.length || index < 0) return null;
 
     let currentNode = this.head;
     for (let i = 0; i < index; i++) {

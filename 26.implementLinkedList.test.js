@@ -21,6 +21,7 @@ describe("#Append", () => {
 
     expect(List.tail.value).toBe(2);
     expect(List.head).toBe(oldTail);
+    expect(List.length).toBe(2)
   });
 });
 
@@ -46,6 +47,29 @@ describe("#getByindex", () => {
   });
 });
 
-describe("#insertAtindex",()=>{
-  
+describe("#insertAtindex", () => {
+  describe("with index less than 0", () => {
+    const List = new LinkedList();
+    List.append(0);
+    List.append(1);
+    List.append(2);
+
+    List.insertAtIndex(-1, 3)
+
+    // expect(List.length).toBe(3);
+
+
+  })
+  describe("with index greater than list length", () => {
+
+  })
+  describe("with index greater than list length", () => {
+
+  })
+  describe("with index 0 ", () => {
+
+  })
+  describe("with index in the middle", () => {
+
+  })
 })
