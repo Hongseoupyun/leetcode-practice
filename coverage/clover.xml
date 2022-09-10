@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1662779593438" clover="3.2.0">
-  <project timestamp="1662779593438" name="All files">
-    <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="5" elements="35" coveredelements="32" complexity="0" loc="23" ncloc="23" packages="1" files="1" classes="1"/>
+<coverage generated="1662785964366" clover="3.2.0">
+  <project timestamp="1662785964366" name="All files">
+    <metrics statements="35" coveredstatements="34" conditionals="8" coveredconditionals="6" methods="9" coveredmethods="7" elements="52" coveredelements="47" complexity="0" loc="35" ncloc="35" packages="1" files="1" classes="1"/>
     <file name="26.implementLinkedList.js" path="/Users/hongseoupyun/Desktop/hongseoup/projects/leetcode-practice/26.implementLinkedList.js">
-      <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="5"/>
-      <line num="3" count="3" type="stmt"/>
-      <line num="4" count="3" type="stmt"/>
+      <metrics statements="35" coveredstatements="34" conditionals="8" coveredconditionals="6" methods="9" coveredmethods="7"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
       <line num="8" count="2" type="stmt"/>
       <line num="9" count="2" type="stmt"/>
       <line num="11" count="2" type="stmt"/>
       <line num="12" count="2" type="stmt"/>
       <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="15" count="1" type="stmt"/>
-      <line num="20" count="5" type="stmt"/>
-      <line num="21" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="22" count="2" type="stmt"/>
-      <line num="23" count="2" type="stmt"/>
-      <line num="25" count="3" type="stmt"/>
-      <line num="26" count="3" type="stmt"/>
+      <line num="20" count="8" type="stmt"/>
+      <line num="21" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="25" count="5" type="stmt"/>
+      <line num="26" count="5" type="stmt"/>
       <line num="31" count="1" type="stmt"/>
       <line num="32" count="1" type="stmt"/>
       <line num="34" count="1" type="stmt"/>
       <line num="35" count="3" type="stmt"/>
       <line num="36" count="3" type="stmt"/>
       <line num="39" count="1" type="stmt"/>
-      <line num="48" count="7" type="stmt"/>
-      <line num="49" count="7" type="stmt"/>
-      <line num="52" count="1" type="stmt"/>
+      <line num="43" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="47" count="0" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="56" count="16" type="stmt"/>
+      <line num="57" count="16" type="stmt"/>
+      <line num="61" count="1" type="stmt"/>
+      <line num="62" count="5" type="stmt"/>
+      <line num="63" count="5" type="stmt"/>
+      <line num="64" count="5" type="stmt"/>
+      <line num="68" count="1" type="stmt"/>
+      <line num="70" count="1" type="stmt"/>
+      <line num="72" count="1" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

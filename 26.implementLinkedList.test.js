@@ -34,3 +34,14 @@ describe("#Print", () => {
     expect(List.print()).toBe("0 -> 1 -> 2");
   });
 });
+
+describe("#getByindex", () => {
+  test("It gets node which is at specific index", () => {
+    const List = new LinkedList();
+    List.append(0);
+    List.append(1);
+    List.append(2);
+
+    expect(List.getByIndex(0).value).toBe(0);
+  });
+});
