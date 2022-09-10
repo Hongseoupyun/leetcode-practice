@@ -6,7 +6,7 @@ class LinkedList {
 
   prepend(newValue) {
     const currentHead = this.head;
-    const newNode = new LinkedListNode(newValue);
+    const newNode = new Node(newValue);
 
     newNode.next = currentHead;
     this.head = newNode;
@@ -17,7 +17,7 @@ class LinkedList {
   }
 
   append(newValue) {
-    const newNode = new LinkedListNode(newValue);
+    const newNode = new Node(newValue);
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
@@ -44,7 +44,7 @@ class LinkedList {
   removeAtIndex(index) {}
 }
 
-function LinkedListNode(value) {
+function Node(value) {
   this.value = value;
   this.next = null;
 }
@@ -52,8 +52,3 @@ function LinkedListNode(value) {
 module.exports = LinkedList;
 
 
-const List = new LinkedList
-List.append(1)
-List.append(2)
-List.append(3)
-console.log(List.print())
