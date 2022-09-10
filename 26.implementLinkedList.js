@@ -33,7 +33,7 @@ class LinkedList {
     
     while(currentNode){
       output.push(currentNode.value)
-      currentNode - currentNode.next
+      currentNode = currentNode.next
     }
 
     return output.join(" -> ")
@@ -50,3 +50,10 @@ function LinkedListNode(value) {
 }
 
 module.exports = LinkedList;
+
+
+const List = new LinkedList
+List.append(1)
+List.append(2)
+List.append(3)
+console.log(List.print())

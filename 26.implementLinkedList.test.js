@@ -12,28 +12,25 @@ describe("#Prepend", () => {
   });
 });
 
-describe("#Append",()=>{
-  test("It adds new node to the end of the List",()=>{
+describe("#Append", () => {
+  test("It adds new node to the end of the List", () => {
     const List = new LinkedList();
-    List.append(1)
+    List.append(1);
     const oldTail = List.tail;
     List.append(2);
 
     expect(List.tail.value).toBe(2);
     expect(List.head).toBe(oldTail);
+  });
+});
 
-  })
-})
-
-describe("#Print",()=>{
-  test("It prints out the linked list",()=>{
+describe("#Print", () => {
+  test("It prints out the linked list", () => {
     const List = new LinkedList();
-    List.append(0)
-    List.append(1)
-    List.append(2)
+    List.append(0);
+    List.append(1);
+    List.append(2);
 
-    List.print
-
-  })
-
-})
+    expect(List.print()).toBe("0 -> 1 -> 2");
+  });
+});
