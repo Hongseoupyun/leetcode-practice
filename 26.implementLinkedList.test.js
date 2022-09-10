@@ -24,3 +24,16 @@ describe("#Append",()=>{
 
   })
 })
+
+describe("#Print",()=>{
+  test("It prints out the linked list",()=>{
+    const List = new LinkedList();
+    List.append(0)
+    List.append(1)
+    List.append(2)
+
+    List.print
+
+  })
+
+})

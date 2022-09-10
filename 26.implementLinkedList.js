@@ -27,7 +27,17 @@ class LinkedList {
     }
   }
 
-  print() {}
+  print() {
+    const output = [];
+    let currentNode = this.head
+    
+    while(currentNode){
+      output.push(currentNode.value)
+      currentNode - currentNode.next
+    }
+
+    return output.join(" -> ")
+  }
 
   getByIndex(index) {}
   insertAtIndex(index, value) {}
