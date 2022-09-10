@@ -1,48 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1662787404085" clover="3.2.0">
-  <project timestamp="1662787404085" name="All files">
-    <metrics statements="39" coveredstatements="38" conditionals="12" coveredconditionals="9" methods="9" coveredmethods="8" elements="60" coveredelements="55" complexity="0" loc="39" ncloc="39" packages="1" files="1" classes="1"/>
+<coverage generated="1662788531764" clover="3.2.0">
+  <project timestamp="1662788531764" name="All files">
+    <metrics statements="45" coveredstatements="45" conditionals="16" coveredconditionals="14" methods="9" coveredmethods="8" elements="70" coveredelements="67" complexity="0" loc="45" ncloc="45" packages="1" files="1" classes="1"/>
     <file name="26.implementLinkedList.js" path="/Users/hongseoupyun/Desktop/hongseoup/projects/leetcode-practice/26.implementLinkedList.js">
-      <metrics statements="39" coveredstatements="38" conditionals="12" coveredconditionals="9" methods="9" coveredmethods="8"/>
-      <line num="3" count="7" type="stmt"/>
-      <line num="4" count="7" type="stmt"/>
-      <line num="5" count="7" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="12" count="2" type="stmt"/>
-      <line num="13" count="2" type="stmt"/>
-      <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+      <metrics statements="45" coveredstatements="45" conditionals="16" coveredconditionals="14" methods="9" coveredmethods="8"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="8" type="stmt"/>
+      <line num="5" count="8" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="15" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="16" count="1" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="22" count="17" type="stmt"/>
-      <line num="23" count="17" type="cond" truecount="2" falsecount="0"/>
-      <line num="24" count="6" type="stmt"/>
-      <line num="25" count="6" type="stmt"/>
-      <line num="27" count="11" type="stmt"/>
-      <line num="28" count="11" type="stmt"/>
-      <line num="30" count="17" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="22" count="20" type="stmt"/>
+      <line num="23" count="20" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="7" type="stmt"/>
+      <line num="25" count="7" type="stmt"/>
+      <line num="27" count="13" type="stmt"/>
+      <line num="28" count="13" type="stmt"/>
+      <line num="30" count="20" type="stmt"/>
       <line num="34" count="1" type="stmt"/>
       <line num="35" count="1" type="stmt"/>
       <line num="37" count="1" type="stmt"/>
       <line num="38" count="3" type="stmt"/>
       <line num="39" count="3" type="stmt"/>
       <line num="42" count="1" type="stmt"/>
-      <line num="46" count="1" type="cond" truecount="2" falsecount="2"/>
-      <line num="47" count="1" type="cond" truecount="3" falsecount="1"/>
-      <line num="49" count="1" type="stmt"/>
-      <line num="50" count="1" type="stmt"/>
-      <line num="51" count="0" type="stmt"/>
-      <line num="53" count="1" type="stmt"/>
-      <line num="60" count="25" type="stmt"/>
-      <line num="61" count="25" type="stmt"/>
+      <line num="46" count="6" type="cond" truecount="2" falsecount="2"/>
+      <line num="47" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="49" count="5" type="stmt"/>
+      <line num="50" count="5" type="stmt"/>
+      <line num="51" count="5" type="stmt"/>
+      <line num="53" count="5" type="stmt"/>
+      <line num="56" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="57" count="1" type="stmt"/>
+      <line num="60" count="3" type="stmt"/>
+      <line num="62" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="64" count="1" type="stmt"/>
       <line num="65" count="1" type="stmt"/>
-      <line num="66" count="5" type="stmt"/>
-      <line num="67" count="5" type="stmt"/>
-      <line num="68" count="5" type="stmt"/>
-      <line num="72" count="1" type="stmt"/>
-      <line num="74" count="1" type="stmt"/>
+      <line num="71" count="30" type="stmt"/>
+      <line num="72" count="30" type="stmt"/>
       <line num="76" count="1" type="stmt"/>
-      <line num="78" count="1" type="stmt"/>
+      <line num="77" count="5" type="stmt"/>
+      <line num="78" count="5" type="stmt"/>
+      <line num="79" count="5" type="stmt"/>
+      <line num="83" count="1" type="stmt"/>
+      <line num="85" count="1" type="stmt"/>
+      <line num="87" count="1" type="stmt"/>
+      <line num="89" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

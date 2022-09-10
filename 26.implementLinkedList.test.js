@@ -58,7 +58,7 @@ describe("#insertAtindex", () => {
       List.insertAtIndex(-1, 3);
 
       expect(List.length).toBe(3);
-    })
+    });
   });
   describe("with index greater than list length", () => {
     test("it does not insert anyting", () => {
@@ -70,8 +70,7 @@ describe("#insertAtindex", () => {
       List.insertAtIndex(4, 3);
 
       expect(List.length).toBe(3);
-
-    })
+    });
   });
   describe("with index 0 ", () => {
     test("it inserts at head", () => {
@@ -85,7 +84,7 @@ describe("#insertAtindex", () => {
       expect(List.length).toBe(4);
       expect(List.head.value).toBe(-1);
       expect(List.head.next.value).toBe(0);
-    })
+    });
   });
   describe("with index in the middle", () => {
     test("it inserts at the given index", () => {
@@ -98,8 +97,7 @@ describe("#insertAtindex", () => {
 
       expect(List.length).toBe(4);
       expect(List.getByIndex(1).value).toBe(0.5);
-      expect(List.getByIndex(1).value.next.value).toBe(1);
-
-    })
+      expect(List.getByIndex(1).next.value).toBe(1);
+    });
   });
 });

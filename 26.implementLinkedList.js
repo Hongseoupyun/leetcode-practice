@@ -52,13 +52,24 @@ class LinkedList {
     }
     return currentNode;
   }
-  insertAtIndex(index, value) { }
-  removeAtIndex(index) { }
+  insertAtIndex(index, value) {
+    if (index === 0) {
+      return this.prepend(value);
+    }
+
+    const prev = this.getByIndex(index - 1);
+
+    if (prev == null) return null;
+
+    prev.next = new linkedListNode(value, prev.next);
+    this.length++;
+  }
+  removeAtIndex(index) {}
 }
 
-function linkedListNode(value) {
+function linkedListNode(value, next) {
   this.value = value;
-  this.next = null;
+  this.next = next;
 }
 
 function createNodes(head, arrayOfNodesValues) {
