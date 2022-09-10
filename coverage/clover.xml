@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1662787170722" clover="3.2.0">
-  <project timestamp="1662787170722" name="All files">
+<coverage generated="1662787404085" clover="3.2.0">
+  <project timestamp="1662787404085" name="All files">
     <metrics statements="39" coveredstatements="38" conditionals="12" coveredconditionals="9" methods="9" coveredmethods="8" elements="60" coveredelements="55" complexity="0" loc="39" ncloc="39" packages="1" files="1" classes="1"/>
     <file name="26.implementLinkedList.js" path="/Users/hongseoupyun/Desktop/hongseoup/projects/leetcode-practice/26.implementLinkedList.js">
       <metrics statements="39" coveredstatements="38" conditionals="12" coveredconditionals="9" methods="9" coveredmethods="8"/>
-      <line num="3" count="5" type="stmt"/>
-      <line num="4" count="5" type="stmt"/>
-      <line num="5" count="5" type="stmt"/>
+      <line num="3" count="7" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
       <line num="9" count="2" type="stmt"/>
       <line num="10" count="2" type="stmt"/>
       <line num="12" count="2" type="stmt"/>
@@ -14,13 +14,13 @@
       <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="16" count="1" type="stmt"/>
       <line num="18" count="2" type="stmt"/>
-      <line num="22" count="11" type="stmt"/>
-      <line num="23" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="24" count="4" type="stmt"/>
-      <line num="25" count="4" type="stmt"/>
-      <line num="27" count="7" type="stmt"/>
-      <line num="28" count="7" type="stmt"/>
-      <line num="30" count="11" type="stmt"/>
+      <line num="22" count="17" type="stmt"/>
+      <line num="23" count="17" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="6" type="stmt"/>
+      <line num="25" count="6" type="stmt"/>
+      <line num="27" count="11" type="stmt"/>
+      <line num="28" count="11" type="stmt"/>
+      <line num="30" count="17" type="stmt"/>
       <line num="34" count="1" type="stmt"/>
       <line num="35" count="1" type="stmt"/>
       <line num="37" count="1" type="stmt"/>
@@ -33,8 +33,8 @@
       <line num="50" count="1" type="stmt"/>
       <line num="51" count="0" type="stmt"/>
       <line num="53" count="1" type="stmt"/>
-      <line num="60" count="19" type="stmt"/>
-      <line num="61" count="19" type="stmt"/>
+      <line num="60" count="25" type="stmt"/>
+      <line num="61" count="25" type="stmt"/>
       <line num="65" count="1" type="stmt"/>
       <line num="66" count="5" type="stmt"/>
       <line num="67" count="5" type="stmt"/>

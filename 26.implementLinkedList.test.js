@@ -21,7 +21,7 @@ describe("#Append", () => {
 
     expect(List.tail.value).toBe(2);
     expect(List.head).toBe(oldTail);
-    expect(List.length).toBe(2)
+    expect(List.length).toBe(2);
   });
 });
 
@@ -49,27 +49,57 @@ describe("#getByindex", () => {
 
 describe("#insertAtindex", () => {
   describe("with index less than 0", () => {
-    const List = new LinkedList();
-    List.append(0);
-    List.append(1);
-    List.append(2);
+    test("it does not insert anyting", () => {
+      const List = new LinkedList();
+      List.append(0);
+      List.append(1);
+      List.append(2);
 
-    List.insertAtIndex(-1, 3)
+      List.insertAtIndex(-1, 3);
 
-    // expect(List.length).toBe(3);
-
-
-  })
+      expect(List.length).toBe(3);
+    })
+  });
   describe("with index greater than list length", () => {
+    test("it does not insert anyting", () => {
+      const List = new LinkedList();
+      List.append(0);
+      List.append(1);
+      List.append(2);
 
-  })
-  describe("with index greater than list length", () => {
+      List.insertAtIndex(4, 3);
 
-  })
+      expect(List.length).toBe(3);
+
+    })
+  });
   describe("with index 0 ", () => {
+    test("it inserts at head", () => {
+      const List = new LinkedList();
+      List.append(0);
+      List.append(1);
+      List.append(2);
 
-  })
+      List.insertAtIndex(0, -1);
+
+      expect(List.length).toBe(4);
+      expect(List.head.value).toBe(-1);
+      expect(List.head.next.value).toBe(0);
+    })
+  });
   describe("with index in the middle", () => {
+    test("it inserts at the given index", () => {
+      const List = new LinkedList();
+      List.append(0);
+      List.append(1);
+      List.append(2);
 
-  })
-})
+      List.insertAtIndex(1, 0.5);
+
+      expect(List.length).toBe(4);
+      expect(List.getByIndex(1).value).toBe(0.5);
+      expect(List.getByIndex(1).value.next.value).toBe(1);
+
+    })
+  });
+});
