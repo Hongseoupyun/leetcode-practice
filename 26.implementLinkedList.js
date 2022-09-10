@@ -6,7 +6,7 @@ class LinkedList {
 
   prepend(newValue) {
     const currentHead = this.head;
-    const newNode = new Node(newValue);
+    const newNode = new linkedListNode(newValue);
 
     newNode.next = currentHead;
     this.head = newNode;
@@ -17,7 +17,7 @@ class LinkedList {
   }
 
   append(newValue) {
-    const newNode = new Node(newValue);
+    const newNode = new linkedListNode(newValue);
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
@@ -29,26 +29,46 @@ class LinkedList {
 
   print() {
     const output = [];
-    let currentNode = this.head
-    
-    while(currentNode){
-      output.push(currentNode.value)
-      currentNode = currentNode.next
+    let currentNode = this.head;
+
+    while (currentNode) {
+      output.push(currentNode.value);
+      currentNode = currentNode.next;
     }
 
-    return output.join(" -> ")
+    return output.join(" -> ");
   }
 
-  getByIndex(index) {}
-  insertAtIndex(index, value) {}
-  removeAtIndex(index) {}
+  getByIndex(index) {
+    if (!this.head && !this.tail) return null;
+
+    let currentNode = this.head;
+    for (let i = 0; i < index; i++) {
+      currentNode = currentNode.next;
+    }
+    return currentNode;
+  }
+  insertAtIndex(index, value) { }
+  removeAtIndex(index) { }
 }
 
-function Node(value) {
+function linkedListNode(value) {
   this.value = value;
   this.next = null;
 }
 
+function createNodes(head, arrayOfNodesValues) {
+  for (let i = 0; i < arrayOfNodesValues.length; i++) {
+    let newNode = new linkedListNode(arrayOfNodesValues[i]);
+    head.next = newNode;
+    head = newNode;
+  }
+}
+
+let list1 = new linkedListNode(1);
+// createNodes(node1, [2, 3, 4, 5, 6]); // 1->2->3->4->5->6
+createNodes(list1, [2, 3, 4, 5, 6]);
+
+console.log(list1);
+
 module.exports = LinkedList;
-
-
