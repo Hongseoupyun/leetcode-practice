@@ -23,7 +23,6 @@ function levelOrder(root) {
     while (len--) {
       let currentNode = queue.shift();
       if (currentNode.left) queue.push(currentNode.left);
-
       if (currentNode.right) queue.push(currentNode.right);
     }
   }
@@ -36,7 +35,7 @@ function levelOrder2(root){
     let result = [];
     let queue = [];
 
-    queue.push(this.root);
+    queue.push(root);
 
     while (queue.length) {
       let currentNode = queue.shift();
