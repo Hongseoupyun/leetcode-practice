@@ -70,7 +70,7 @@ class BST {
     let currentNode = this.root;
 
     while (currentNode.right) {
-      currentNode = this.right;
+      currentNode = currentNode.right;
     }
     return currentNode.value;
   }
@@ -108,6 +108,7 @@ class BST {
       if (node.right) traverse(node.right);
     };
 
+    traverse(this.root);
     return result;
   }
 
@@ -125,7 +126,7 @@ class BST {
       //if right child exists, go right again
       if (node.right) traverse(node.right);
     };
-
+    traverse(this.root);
     return result;
   }
 
@@ -143,6 +144,7 @@ class BST {
       //capture root value
       result.push(node.value);
     };
+    traverse(this.root);
     return result;
   }
 
@@ -156,7 +158,7 @@ class BST {
     while (queue.length) {
       let currentNode = queue.shift();
 
-      result.push(currentNode);
+      result.push(currentNode.value);
 
       if (currentNode.left) {
         queue.push(currentNode.left);
@@ -170,7 +172,6 @@ class BST {
   }
 }
 
-
 const bst = new BST(15);
 
 bst.insert(3);
@@ -180,13 +181,18 @@ bst.insert(12);
 bst.insert(28);
 bst.insert(39);
 
-console.log(bst)
-
 const callIt = () => {
-  
-    console.log("size of the tree: ", bst.size());//7
-    console.log("min node value from the tree: ", bst.min());//2
-    console.log("max node value from the tree: ", bst.max());//39    
-  
-}
+  setTimeout(() => {
+    console.log(bst.root);
+    console.log("size of the tree: ", bst.size()); //7
+    console.log("min node value from the tree: ", bst.min()); //2
+    console.log("max node value from the tree: ", bst.max()); //39
+    console.log("It contains 2", bst.contain(2)); //true
+    console.log("It contains 9", bst.contain(9)); //false
+    console.log("dfs in-order: ", bst.dfsInOrder()); //[2,3,12,15,28,36,39]
+    console.log("dfs pre-order: ", bst.dfsPreOrder()); //[15,3,2,12,36,28,39]
+    console.log("dfs post-order: ", bst.dfsPostOrder()); //[2,12,3,28,39,36,15]
+    console.log("bfs search", bst.bfs()); //[15,3,36,2,12,28,39]
+  }, 500);
+};
 callIt();
