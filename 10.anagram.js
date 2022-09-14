@@ -42,12 +42,14 @@ const isAnagram2 = function (string1, string2) {
       string2Count[string2.toLowerCase()[i]] = 1;
     }
   }
-
+  console.log(string1Count,string2Count)
   for (let key in string1Count) {
     if (string1Count[key] !== string2Count[key]) return false;
   }
   return true;
+  
 };
 
 console.log(isAnagram1("Cineman", "icemann")); //true
 console.log(isAnagram2("Cinema", "icemann")); //false
+console.log(isAnagram2("dac", "dda")); //false
