@@ -16,7 +16,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 //hash map
 //O(n)
 //1.loop through the nums array
-//2.check if the target value - nums[i] is in the hasmap
+//2. check if the target value - nums[i] is in the hasmap
 //3. if true return [map[target-nums[i]],i]
 //4. otherwise, map[nums[i]]=i
 const twoSum = function (nums, target) {
@@ -35,4 +35,3 @@ const twoSum = function (nums, target) {
 };
 
 console.log(twoSum([1, 2, 3, 4, 5, 6, 7], 11));
-

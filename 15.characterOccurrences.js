@@ -3,16 +3,16 @@
 //loop through it and store the char=>if obj[char] = true, obj[char]=+1 otherwise, obj[char]=1
 function countOccurrences(string) {
   let stringToLoop = string.toLowerCase().replace(/[^\w]/g, "");
-  let charCount = {};
+  let count = {};
 
   for (let i = 0; i < stringToLoop.length; i++) {
-    if (!charCount[stringToLoop[i]]) {
-      charCount[stringToLoop[i]] = 1;
+    if (count[stringToLoop[i]]) {
+      count[stringToLoop[i]] += 1;
     } else {
-      charCount[stringToLoop[i]] += 1;
+      count[stringToLoop[i]] = 1;
     }
   }
-  return charCount;
+  return count;
 }
 
 console.log(countOccurrences("Helloh Wworld"));
