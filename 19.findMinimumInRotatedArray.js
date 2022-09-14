@@ -4,6 +4,13 @@
 // Output: 1
 // Explanation: The original array was [1,2,3,4,5] rotated 3 times.
 
+//1.set boundary by declaring left and right
+//2.loop while (left<right)
+//3.set mid point for binary search
+//4.midPoint = Math.floor((left+right)/2)
+//5.if(nums[midpoint] > nums[right]), minimum will be nums[midpoint+1] eg)[3,4,5,1,2] 5>2
+//6.otherwise, readjust the boundary by setting right = midpoint
+
 // [5,1,2,3,4]
 // [4,5,1,2,3]
 // [3,4,5,1,2]
