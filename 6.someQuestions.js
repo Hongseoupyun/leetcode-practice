@@ -26,24 +26,18 @@ You are allowed to add the numbers in the array in any order that you like so th
 
 */
 
-
-
-
 const array = [1, 2, 3, 4];
 
-
-function sortArrayDesc (array){
+function sortArrayDesc(array) {
   let result = [];
-  for (i = 0; i = array.length; i++) {
+  for (i = 0; (i = array.length); i++) {
     let firtValue = array[0];
     if (array[i] < firtValue) {
       result.push(array[i]);
     } else {
-      result.push(ar)
+      result.push(ar);
     }
-    
+
     return biggestValue, result;
   }
-
 }
-

@@ -1,11 +1,11 @@
 for (let i = 0; i < 101; i++) {
-  if ( i % 15 === 0) {
-    console.log("fizz buzz")
+  if (i % 15 === 0) {
+    console.log("fizz buzz");
   } else if (i % 5 === 0) {
-    console.log("buzz")
+    console.log("buzz");
   } else if (i % 3 === 0) {
-    console.log("fizz")
+    console.log("fizz");
   } else {
-    console.log(i)
+    console.log(i);
   }
 }

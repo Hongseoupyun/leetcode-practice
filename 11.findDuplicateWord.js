@@ -33,14 +33,12 @@ function findDuplicates2(string) {
   let duplicate = [];
   let stringArray = string.toLowerCase().split(" ").sort(); //[ 'hello', 'hello' ,'my', 'name', 'is' ];
 
-
   for (let i = 0; i < stringArray.length - 1; i++) {
-
     if (stringArray[i] === stringArray[i + 1]) {
-      duplicate.push(stringArray[i])
+      duplicate.push(stringArray[i]);
     }
   }
-  return duplicate
+  return duplicate;
 }
 
-console.log(findDuplicates2("wow is wow zz"))
+console.log(findDuplicates2("wow is wow zz"));

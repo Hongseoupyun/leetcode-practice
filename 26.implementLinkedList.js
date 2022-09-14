@@ -68,7 +68,7 @@ class LinkedList {
     if (index === 0) {
       this.head = this.head.next;
       this.length--;
-      return
+      return;
     }
 
     if (index > this.length || index < 0) return null;

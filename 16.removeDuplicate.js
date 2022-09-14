@@ -6,29 +6,33 @@ function removeDuplicate(array) {
 
   for (i = 0; i < array.length; i++) {
     if (result.indexOf(array[i]) === -1) {
-      result.push(array[i])
+      result.push(array[i]);
     }
   }
-  return result
+  return result;
 }
 
-function removeDuplicate2(array){
-  return [...new Set(array)]
+function removeDuplicate2(array) {
+  return [...new Set(array)];
 }
 
 function removeDuplicate3(array) {
-  const map = {}
+  const map = {};
 
   for (const char of array) {
     if (map[char]) {
-      map[char]++
+      map[char]++;
     } else {
-       map[char] = 1
+      map[char] = 1;
     }
   }
 
-  return Object.keys(map)
+  return Object.keys(map);
 }
-console.log(removeDuplicate([1,1,2,2,3,4,5,6]))
-console.log(removeDuplicate2([1,2,2,2,2,2,4,5,6,6,6,6,1,6,1,25]))
-console.log(removeDuplicate3([1,2,2,2,2,2,4,5,6,6,6,6,1,6,1,25]))
+console.log(removeDuplicate([1, 1, 2, 2, 3, 4, 5, 6]));
+console.log(
+  removeDuplicate2([1, 2, 2, 2, 2, 2, 4, 5, 6, 6, 6, 6, 1, 6, 1, 25])
+);
+console.log(
+  removeDuplicate3([1, 2, 2, 2, 2, 2, 4, 5, 6, 6, 6, 6, 1, 6, 1, 25])
+);

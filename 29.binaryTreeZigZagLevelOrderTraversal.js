@@ -4,7 +4,7 @@ function zigzagLevelOrder(root) {
   let result = [];
   let queue = [root];
   let levelCount = 0;
-    
+
   while (queue.length) {
     let length = queue.length;
     if (levelCount % 2 === 0) {
@@ -19,5 +19,5 @@ function zigzagLevelOrder(root) {
       if (currentNode.right) queue.push(currentNode.right);
     }
   }
-    return result;
+  return result;
 }

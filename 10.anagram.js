@@ -3,8 +3,18 @@
 //2.If you order two anaram words in alphabetical order it will be uniform
 
 const isAnagram1 = function (string1, string2) {
-  let string1Sorted = string1.replace(/[^\w]/g, '').toLowerCase().split("").sort().join();
-  let string2Sorted = string2.replace(/[^\w]/g, '').toLowerCase().split("").sort().join();
+  let string1Sorted = string1
+    .replace(/[^\w]/g, "")
+    .toLowerCase()
+    .split("")
+    .sort()
+    .join();
+  let string2Sorted = string2
+    .replace(/[^\w]/g, "")
+    .toLowerCase()
+    .split("")
+    .sort()
+    .join();
 
   console.log(string1Sorted);
   console.log(string2Sorted);
@@ -39,5 +49,5 @@ const isAnagram2 = function (string1, string2) {
   return true;
 };
 
-console.log(isAnagram1("Cineman", "icemann"));//true
-console.log(isAnagram2("Cinema", "icemann"));//false
+console.log(isAnagram1("Cineman", "icemann")); //true
+console.log(isAnagram2("Cinema", "icemann")); //false

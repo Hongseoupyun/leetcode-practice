@@ -38,9 +38,7 @@ function permuteArray(nums) {
 
 console.log(permuteArray([1, 2, 3]));
 
-
 //iterative
 // function permute2(){
-  
 
 // }
