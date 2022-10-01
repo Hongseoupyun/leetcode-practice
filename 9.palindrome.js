@@ -1,6 +1,8 @@
 //If the reversed string is same as original string ,the string is palindrome
 //use .split() .reverse and .join the get reversedstring
-function palidrome(string) {
+
+//solution1
+function isPalidrome(string) {
   let reg = /[\W_]/g; //non alpha numeric character(punctuation, space, symbol)
   let stringToCompare = string.toLowerCase().replace(reg, ""); //remove all alpha numeric character
 
@@ -12,5 +14,13 @@ function palidrome(string) {
   }
 }
 
-console.log(palidrome("aba"))
-console.log(palidrome("hongseoup"))
+//solution 2
+
+function isPalindrome(string) {
+  return string.split('').every((char, i) => {
+    return char === string[string.length - i - 1]
+  })
+}
+
+console.log(isPalidrome("aba"))
+console.log(isPalidrome("hongseoup"))
