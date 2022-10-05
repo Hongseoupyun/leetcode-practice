@@ -1,6 +1,6 @@
 /*
 Semantic Versions
-You're fed up about changing the version of your software manually. Instead, you will create a little script that will make it for you.
+You're fed up about changing the version of your software manually. Instead, you will create a little script that will make it fqor you.
 Create a function nextVersion, that will take a string in parameter, and will return a string containing the next version number.
 For example
 
