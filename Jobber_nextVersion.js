@@ -21,7 +21,7 @@ You can assume all tests inputs to be valid.
 //4.Put the arr back to string and return
 
 function nextVersion(string) {
-  let arr = string.split(".").map((elm) => Number(elm)); //returns array with strings converted to number
+  const arr = string.split(".").map((elm) => Number(elm)); //returns array with strings converted to number
 
   //For loop to check the value
   for (let i = arr.length - 1; i >= 0; i--) {
