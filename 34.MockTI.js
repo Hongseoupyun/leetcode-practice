@@ -44,28 +44,24 @@ function duplicate(array) {
 }
 
 // Q3.What will be returned by each of these?
-console.log("hello" || "world") // hello
-console.log("foo" && "bar") //bar
-
-
+console.log("hello" || "world"); // hello
+console.log("foo" && "bar"); //bar
 
 /*Q4
  Simple, given a string of words, return the length of the shortest word(s).
 String will never be empty and you do not need to account for different data types. */
 
 function shortestWords(string) {
-  let arrOfString = string.split(" ")
-  let shortestWord = arrOfString[0]
+  let arrOfString = string.split(" ");
+  let shortestWord = arrOfString[0];
   for (let i = 0; i < arrOfString.length; i++) {
     if (arrOfString[i] <= shortestWord) {
       shortestWord = arrOfString[i];
     }
   }
-  console.log(shortestWord.length)
+  console.log(shortestWord.length);
 }
-shortestWords("Hi this is my name") //2
-
-
+shortestWords("Hi this is my name"); //2
 
 // // Write a function that takes an object as argument
 // // Somehow, the properties and keys of the object got mixed up
