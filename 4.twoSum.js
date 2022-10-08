@@ -19,6 +19,11 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 //2. check if the target value - nums[i] is in the hasmap
 //3. if true return [map[target-nums[i]],i]
 //4. otherwise, map[nums[i]]=i
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
 const twoSum = function (nums, target) {
   let count = {};
 
@@ -26,12 +31,12 @@ const twoSum = function (nums, target) {
     let value = nums[i];
     let pair = target - value;
 
-    if (count[pair]) {
+    if (count[pair] !== undefined) {
       return [count[pair], i];
     } else {
       count[value] = i;
     }
   }
+  return [];
 };
-
-console.log(twoSum([1, 2, 3, 4, 5, 6, 7], 11));
+console.log(twoSum([2, 7, 11, 15], 9));
