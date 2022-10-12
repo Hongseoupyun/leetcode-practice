@@ -31,7 +31,7 @@ const twoSum = function (nums, target) {
     let value = nums[i];
     let pair = target - value;
 
-    if (count[pair] !== undefined) {
+    if (count[pair] !== undefined || count[pair]) {
       return [count[pair], i];
     } else {
       count[value] = i;
