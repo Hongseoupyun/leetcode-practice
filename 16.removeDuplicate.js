@@ -29,6 +29,10 @@ function removeDuplicate3(array) {
 
   return Object.keys(map);
 }
+
+function removeDuplicate4(array) {
+  return array.filter((item, index) => array.indexOf(item) === index);
+}
 console.log(removeDuplicate([1, 1, 2, 2, 3, 4, 5, 6]));
 console.log(
   removeDuplicate2([1, 2, 2, 2, 2, 2, 4, 5, 6, 6, 6, 6, 1, 6, 1, 25])
