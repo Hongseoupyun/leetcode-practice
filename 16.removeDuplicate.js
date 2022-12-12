@@ -35,7 +35,7 @@ function removeDuplicate4(array) {
 }
 console.log(removeDuplicate([1, 1, 2, 2, 3, 4, 5, 6]));
 console.log(
-  removeDuplicate2([1, 2, 2, 2, 2, 2, 4, 5, 6, 6, 6, 6, 1, 6, 1, 25])
+  removeDuplicate2(["gmc","jeep","gmc","honda","honda","jeep","gmc","honda"])
 );
 console.log(
   removeDuplicate3([1, 2, 2, 2, 2, 2, 4, 5, 6, 6, 6, 6, 1, 6, 1, 25])
